@@ -16,6 +16,7 @@ const globalStyles = css`
   body {
     position: relative;
     min-width: 32rem;
+    font-family: "Rubik", sans-serif;
   }
 `;
 
