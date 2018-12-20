@@ -2,6 +2,14 @@ import { createGlobalStyle, css } from 'styled-components';
 import normalize from 'normalize.css/normalize.css';
 
 
+export const color = {
+  primary: '#0068ff',
+  onPrimary: '#ffffff',
+  secondary: '#243244',
+  onSecondary: '#ffffff',
+};
+
+
 const globalStyles = css`
   *,
   *:before,
@@ -17,8 +25,8 @@ const globalStyles = css`
     position: relative;
     min-width: 32rem;
     font-family: "Rubik", sans-serif;
+    color: ${color.secondary};
   }
 `;
-
 
 export const GlobalStyles = createGlobalStyle`${normalize} ${globalStyles}`;

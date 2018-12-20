@@ -1,7 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 import { GlobalStyles } from 'ui/theme';
+
+import { Routes } from 'routes';
 
 
 class App extends React.Component {
@@ -12,7 +15,9 @@ class App extends React.Component {
       <React.Fragment>
         <GlobalStyles/>
 
-        <div>Pet Projects is a place where you can find a project for practicing your development skills</div>
+        <BrowserRouter>
+          <Routes/>
+        </BrowserRouter>
       </React.Fragment>
     );
   };
